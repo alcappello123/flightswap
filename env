@@ -1,0 +1,54 @@
+# ============================================
+# FlightSwap Complete Configuration (.env)
+# ============================================
+# WICHTIG: NIEMALS zu GitHub committen!
+# Setze diese Values auf Render.com env vars
+
+# ============================================
+# STRIPE CONFIGURATION
+# ============================================
+STRIPE_PUBLISHABLE_KEY=pk_test_51UFGDiPRaNDPCujZeYPqWPiU6JRppuAq0YSUTlE5R8tPEHY39NigF0fzDq4GBrf7SP0kjYAVEpmoSfzh4sbFBWCQ00a3512OLE
+STRIPE_SECRET_KEY=sk_test_51UFGDiPRaNDPCujZcGfiq6djkrjeWGtUc48PskNPbJ6k7gVkbLtwuwuxvR2S4mbdUzUy7D7XXXbYrhtb2jX74dkp002MgfSpyP
+
+# ============================================
+# DATABASE CONFIGURATION (PlanetScale)
+# ============================================
+DATABASE_URL=mysql://pscale_api_r640pa9ilwzp.0k9foif4u58j:pscale_pw_J4XeSXdz4zUydGSakC1VgtNRodlrHNFF@aws-us-east-1-3.pg.psdb.cloud:5432/flightswap?sslAccept=strict
+
+# ============================================
+# FIREBASE SERVICE ACCOUNT
+# ============================================
+FIREBASE_PROJECT_ID=flightswap-f0a82
+FIREBASE_PRIVATE_KEY_ID=06016d980cc28b02f2717a5e90a3e5f5e29c4512
+FIREBASE_PRIVATE_KEY=-----BEGIN PRIVATE KEY-----\n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\n-----END PRIVATE KEY-----\n
+FIREBASE_CLIENT_EMAIL=firebase-adminsdk-fbsvc@flightswap-f0a82.iam.gserviceaccount.com
+FIREBASE_CLIENT_ID=113612879530686975988
+FIREBASE_AUTH_URI=https://accounts.google.com/o/oauth2/auth
+FIREBASE_TOKEN_URI=https://oauth2.googleapis.com/token
+FIREBASE_AUTH_PROVIDER_CERT_URL=https://www.googleapis.com/oauth2/v1/certs
+FIREBASE_CLIENT_CERT_URL=https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-fbsvc%40flightswap-f0a82.iam.gserviceaccount.com
+
+# ============================================
+# SERVER CONFIGURATION
+# ============================================
+NODE_ENV=production
+PORT=3000
+CORS_ORIGIN=*
+
+# ============================================
+# API & APP CONFIGURATION
+# ============================================
+API_URL=https://flightswap-backend.onrender.com
+REACT_APP_API_URL=https://flightswap-backend.onrender.com
+REACT_APP_STRIPE_PUBLISHABLE_KEY=pk_test_51UFGDiPRaNDPCujZeYPqWPiU6JRppuAq0YSUTlE5R8tPEHY39NigF0fzDq4GBrf7SP0kjYAVEpmoSfzh4sbFBWCQ00a3512OLE
+
+# ============================================
+# JWT & SECURITY
+# ============================================
+JWT_SECRET=your_jwt_secret_key_change_this_in_production
+JWT_EXPIRY=7d
+
+# ============================================
+# LOGGING
+# ============================================
+LOG_LEVEL=info

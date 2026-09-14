@@ -1,0 +1,94 @@
+{
+  "name": "flightswap",
+  "version": "1.0.0",
+  "description": "Live Seat Swap App for iOS",
+  "main": "flightswap-backend.js",
+  "scripts": {
+    "start": "node flightswap-backend.js",
+    "dev": "nodemon flightswap-backend.js",
+    "expo": "expo start",
+    "expo:ios": "expo start --ios",
+    "build": "eas build",
+    "build:ios": "eas build --platform ios",
+    "submit": "eas submit"
+  },
+  "keywords": [
+    "travel",
+    "flight",
+    "seat-swap",
+    "airline",
+    "ryanair",
+    "lufthansa"
+  ],
+  "author": "Alfonso Cappello <alfonso.cappello@icloud.com>",
+  "license": "MIT",
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-native": "^0.73.0",
+    "expo": "^50.0.0",
+    "expo-camera": "^13.4.0",
+    "expo-notifications": "^0.20.0",
+    "expo-linear-gradient": "^12.4.0",
+    "firebase": "^10.7.0",
+    "firebase-admin": "^12.0.0",
+    "express": "^4.18.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "stripe": "^14.0.0",
+    "pg": "^8.11.3",
+    "axios": "^1.6.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2",
+    "eas-cli": "^5.5.0",
+    "@react-native-async-storage/async-storage": "^1.21.0"
+  },
+  "expo": {
+    "name": "FlightSwap",
+    "slug": "flightswap",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "scheme": "flightswap",
+    "userInterfaceStyle": "automatic",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "plugins": [
+      [
+        "expo-notifications",
+        {
+          "icon": "./assets/notification-icon.png"
+        }
+      ],
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Allow FlightSwap to access your camera to scan boarding passes."
+        }
+      ]
+    ],
+    "ios": {
+      "supportsTabletMode": true,
+      "bundleIdentifier": "com.alfonsocappello.flightswap",
+      "deploymentTarget": "14.0",
+      "config": {
+        "usesNonExemptEncryption": false
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "package": "com.alfonsocappello.flightswap"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "owner": "alfonsocappello",
+    "runtimeVersion": "1.0.0"
+  }
+}
